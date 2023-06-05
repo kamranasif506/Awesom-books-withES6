@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books with ES6 Modules</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><span class="first">Awesome Books</span></div>
+            <ul>
+                <li class="first-li nav-items" data-target="book-lists"><a href="#" class="active">Lists</a></li>
+                <li class="nav-items" data-target="form"><a href="#">Add New</a></li>
+                <li class="nav-items" data-target="contact-info"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <p id="dateTime"></p>
+
+        <div class="book-lists show" id="book-lists">
+            <h1>Awesome Books</h1>
+            <div id="details">
+            
+            </div>
+        </div>
+        <div class="hide form" id="form">
+            <div class="form-fields" >
+                <h1 class="form-title">Add a new book</h1>
+                <input id="title" type="text" placeholder="Title">
+                
+                <input id="author" type="text" placeholder="Author">
+                <span id="error">All fields are required</span>
+                <button type="button" class="add" id="add">Add</button>
+            </div>
+        </div>
+        <div id="contact-info" class="hide contact-info">
+            <div id="contact">
+                <h1 class="form-title">Contact Information</h1>
+                <p class="contact-info">Do have any questions or just want to say Hello?</p>
+                <p class="contact-info">You can reach out to us</p>
+                <ul>
+                    <li>Our email: kamranasif506@gmail.com</li>
+                    <li>Our phone number: +92300 4862070</li>
+                    <li>Our address: Streetname 22, 42000 Khushab, Pakistan</li>
+                </ul>
+            </div>   
+        </div>
+        
+    </main>
+    <footer>
+        <p>Copyright @2023.</p>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
