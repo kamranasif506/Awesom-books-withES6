@@ -12,18 +12,18 @@ const currentDate = getCurrentDate();
 dateDiv.innerHTML = currentDate;
 
 navItems.forEach((navItem) => {
-    navItem.addEventListener('click', (event) => {
-      const target = event.target.parentElement.getAttribute('data-target');
-      bookCollection.navigateSection(target, event.target);
-    });
+  navItem.addEventListener('click', (event) => {
+    const target = event.target.parentElement.getAttribute('data-target');
+    bookCollection.navigateSection(target, event.target);
   });
+});
 
-addBtn.addEventListener('click',() => {
-    if (bookCollection.title.value === '' || bookCollection.author.value === '') {
-        bookCollection.errorMsg.style.display = 'block';
-        bookCollection.errorMsg.style.color = 'red';
-    } else {
-        bookCollection.errorMsg.style.display = 'none';
-        bookCollection.addBook(bookCollection.title.value, bookCollection.author.value);
-    }
-})
+addBtn.addEventListener('click', () => {
+  if (bookCollection.title.value === '' || bookCollection.author.value === '') {
+    bookCollection.errorMsg.style.display = 'block';
+    bookCollection.errorMsg.style.color = 'red';
+  } else {
+    bookCollection.errorMsg.style.display = 'none';
+    bookCollection.addBook(bookCollection.title.value, bookCollection.author.value);
+  }
+});
